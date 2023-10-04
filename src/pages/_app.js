@@ -1,4 +1,4 @@
-import MainHeader from '@/components/Headers/MainHeader'
+import ExampleNavbarOne  from '@/components/Headers/MainHeader'
 import '@/styles/globals.css'
 import Head from 'next/head'
 
@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
       <title>RealMate - Find your mate</title>
       <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
     </Head>
-    <MainHeader />
+    <ExampleNavbarOne/>
     <Component {...pageProps} />
   </>
 }
