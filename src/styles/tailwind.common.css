@@ -1,3 +1,11 @@
-.btn-grade{
+.btn-grade {
     @apply bg-gradient-to-b from-primary to-btngrad px-5 py-1 rounded-md text-white;
+}
+
+.custom-hover-bg {
+    transition: background-color 0.2s;
+}
+
+.custom-hover-bg:hover {
+    background-color: #86D7DC;
 }
