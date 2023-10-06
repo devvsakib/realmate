@@ -5,11 +5,11 @@ import ActiveMenu from "./ActiveMenu"
 
 const MainHeader = () => {
     return (
-        <header>
+        <header className="py-3 shadow-md">
             <CommonLayout>
-                <div className="flex justify-between items-center">
+                <div className="lg:flex justify-between items-center">
                     <div>
-                        <img src="/assets/logo.svg" alt="RealMate" />
+                        <img className="w-2/4" src="/assets/logo.svg" alt="RealMate" />
                     </div>
                     <div>
                         <ul className="flex gap-6">

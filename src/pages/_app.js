@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
             <title>RealMate - Find your mate</title>
             <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
         </Head>
-        <main className=''>
+        <main className='flex flex-col justify-between min-h-screen'>
             <MainHeader />
             <Component {...pageProps} />
             <Footer />

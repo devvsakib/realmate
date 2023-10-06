@@ -1,18 +1,14 @@
-'use client'
 import Link from "next/link"
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import menu from "../Menus/Menu"
 
 const ActiveMenu = ({ path, menu }) => {
-    const router = useRouter();
-    const [currentPath, setCurrentPath] = useState('');
-    useEffect(() => {
-        if (router.asPath) {
-            setCurrentPath(router.asPath);
-        }
-    }, [router.asPath]);
+    const [isActive, setIsActive] = useState(false)
+    // useEffect(() => {
+    //     menu.main.items.map((item) => item.path === path && setIsActive(true))
+    // }, [])
     return (
-        <Link href={path} className={`${currentPath == path.slice(1) ? "text-primary" : ""}`}>{menu}</Link>
+        <Link href={path} className={`${isActive ? "text-primary" : ""}`}>{menu}</Link>
     )
 }
 
