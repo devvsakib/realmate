@@ -25,31 +25,3 @@ body {
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
-/* Header.module.css */
-
-.header {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .githubIcon {
-    width: 30px;
-    height: 30px;
-    fill: white;
-  }
-  
