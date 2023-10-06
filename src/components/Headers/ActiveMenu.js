@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ActiveMenu = ({ path, menu }) => {
     const router = useRouter();
