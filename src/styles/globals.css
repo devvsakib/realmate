@@ -5,9 +5,11 @@
 :root {
     --primary: #fa4a6f;
     --secondary: #232635;
+    --footerbg: #23273A;
     --tertiary: #0eb7be;
     --quaternary: #ec3899;
     --quinary: #36394b;
+    --btngrad: #532B79;
     --foreground-rgb: #fff;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;

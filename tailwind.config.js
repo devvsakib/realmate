@@ -12,7 +12,9 @@ module.exports = {
         'secondary': 'var(--secondary)',
         'tertiary': 'var(--tertiary)',
         'quaternary': 'var(--quaternary)',
-        'quinary': 'var(--quinary)'
+        'quinary': 'var(--quinary)',
+        'btngrad': 'var(--btngrad)',
+        'footerbg': 'var(--footerbg)'
       }
     }
   },
