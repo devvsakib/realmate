@@ -18,7 +18,7 @@ const Testimonial = () => {
   return (
     <>
         <div className="h-[90vh] flex flex-col items-center justify-center bg-[#fbfafe]">
-            <div className="text-4xl text-[#23263b] font-semibold">
+            <div className="text-4xl text-secondary text-[#23263b] font-semibold">
                 What our members say
             </div>
       <Swiper
@@ -44,7 +44,9 @@ const Testimonial = () => {
                 <AiFillStar />
                 <AiFillStar />
               </div>
-              <div className="font-bold text-xl">{loremMessage}</div>
+              <div className="font-medium text-secondary text-xl">
+                {loremMessage}
+              </div>
               <div className="flex justify-center items-center gap-4">
                 <div className="h-10 w-10">
                   <Image
