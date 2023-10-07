@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer/Footer'
 import MainHeader from '@/components/Headers/MainHeader'
+import Testimonial from '@/components/Testimonial/Testimonial'
 import '@/styles/globals.css'
 import '@/styles/tailwind.common.css'
 import Head from 'next/head'
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
         <main className='flex flex-col justify-between min-h-screen'>
             <MainHeader />
             <Component {...pageProps} />
+            <Testimonial />
             <Footer />
         </main>
     </>
