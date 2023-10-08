@@ -1,4 +1,5 @@
 import CommonLayout from "../Layouts/CommonLayout"
+import Searchbox from "../Searchbox/Searchbox"
 
 const HeroSection = () => {
     return (
@@ -19,6 +20,9 @@ const HeroSection = () => {
                     <div></div>
                 </div>
             </CommonLayout>
+            <Searchbox>
+                
+            </Searchbox>
         </section>
     )
 }
