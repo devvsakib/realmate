@@ -46,7 +46,7 @@ const MobileMainHeader = () => {
               </li>
             </ul>
             {menuOpen &&
-              <div style={{ zIndex: -1, opacity: 0.5 }} className="fixed top-0 right-0 h-full w-full bg-gradient-to-l from-tertiary to-btngrad"></div>
+              <div style={{ zIndex: -1, opacity: 0.9 }} className="fixed top-0 right-0 h-full w-full bg-gradient-to-l from-white from-40% to-tertiary"></div>
             }
           </div>
         </div>
