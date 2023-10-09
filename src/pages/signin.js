@@ -5,6 +5,8 @@ import { FaTwitter } from 'react-icons/fa';
 
 const Login =() => {
     return(
+        <div>
+        <div class="font-bold text-center text-xl p-4 m-4">Welcome Back!<br/> World number #1 matrimony site</div>
         <div class="w-full h-screen flex items-start">
             <div class="relative w-1/2 h-full flex flex-col">
                 <img src="./img/couple.png" class="w-full h-full object-cover"/>
@@ -70,6 +72,7 @@ const Login =() => {
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
