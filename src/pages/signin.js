@@ -8,10 +8,10 @@ const Login =() => {
         <div>
         <div class="font-bold text-center text-xl p-4 m-4">Welcome Back!<br/> World number #1 matrimony site</div>
         <div class="w-full h-screen flex items-start">
-            <div class="relative w-1/2 h-full flex flex-col">
-                <img src="./img/couple.png" class="w-full h-full object-cover"/>
+            <div class="relative w-1/2 h-full flex flex-col pl-20 pb-10">
+                <img src="./img/couple.png" class="w-full h-full object-cover bg-[#ffc5b2] rounded-l-lg"/>
             </div>
-            <div class="w-1/2 h-full bg-purple-50 flex flex-col p-20 justify-between items-center ">
+            <div class="w-1/2 mr-20 rounded-r-lg bg-purple-50 flex flex-col p-20 justify-between items-center ">
                 <h1 class=" text-black text-bold text-lg font-semibold max-w-[500px] items-center mx-auto">
                     We always love to see you
                 </h1>
