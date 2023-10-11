@@ -1,6 +1,5 @@
 import "typeface-roboto";
 import React from 'react';
-import { Checkbox, Radio, Switch } from 'pretty-checkbox-react';
 // Component for the radio buttons section
 const RadioButtons = () => {
   return (
@@ -10,11 +9,11 @@ const RadioButtons = () => {
       </label>
       <div style={selectStyle}>
         <input type="radio" name="gender" value="bride" id="bride" style={radioStyle}/>
-        <label style={selectStyle}>Bride</label>
+        <label style={brideStyle}>Bride</label>
       </div>
       <div style={selectStyle}>
         <input type="radio" name="gender" value="groom" id="groom" style={radioStyle}/>
-        <label style={selectStyle}>Groom</label>
+        <label style={groomStyle}>Groom</label>
       </div>
     </div>
   );
@@ -27,9 +26,9 @@ const AgeInputs = () => {
       <label style={labelStyle}>
         Age:
       </label>
-      <div style={ageTo}>
+      <div style={ageStyle}>
         <input type="number" placeholder="18" style={ageContainer} />
-        <span style= {ageTo}>to</span>
+        <span style= {ageTo}>To</span>
         <input type="number" placeholder="40" style={ageContainer} />
       </div>
     </div>
@@ -55,7 +54,7 @@ const ReligionDropdown = () => {
 // Component for the Mother Tongue dropdown section
 const MotherTongueDropdown = () => {
   return (
-    <div style={sectionStyle}>
+    <div style={languageStyle}>
       <label style={labelStyle}>
         Mother Tongue:
       </label>
@@ -89,13 +88,13 @@ const searchboxStyle = {
   width: '1096px',
   height: '168px',
   backgroundColor: 'white',
-  margin: '0 auto',
   marginTop: '30px',
   boxShadow: '0px 3px 1px rgba(0, 0, 0, 0.06)',
   border: '0px solid #ccc',
   borderRadius: '3px',
   textAlign: 'center',
   display: 'inline-block',
+  padding: '0 20px 0 20px',
 };
 
 const sectionStyle = {
@@ -103,9 +102,19 @@ const sectionStyle = {
   alignItems: 'left',
   marginBottom: '20px',
   marginTop: '40px',
-  padding: '0 18px',
   textAlign: 'left',
+  padding: '0 60px 0 0px',
 };
+
+const languageStyle = {
+  display: 'inline-block',
+  alignItems: 'left',
+  marginBottom: '20px',
+  marginTop: '40px',
+  textAlign: 'left',
+  padding: '0 30px 0 0px',
+};
+
 
 const labelStyle = {
   textAlign: 'left',
@@ -126,10 +135,14 @@ const ageContainer = {
   width: '48px',
   height: '40px',
   fontSize: '14px',
-  fontWeight: '300',
-  margin: '0px 20px 0px 0px',
   textAlign: 'center',
   borderRadius: '4px',
+};
+
+const ageStyle = {
+  display: 'inline-block',
+  alignItems: 'center',
+  fontSize: '14px',
 };
 
 const ageTo = {
@@ -137,12 +150,11 @@ const ageTo = {
   alignItems: 'center',
   fontSize: '14px',
   fontWeight: '300',
-  marginRight: '20px',
+  padding: '0 20px 0 20px',
+  color: '#23273A',
 };
 
-
 const religionDropdown = {
-  // marginLeft: '10px',
   fontFamily: 'Roboto, sans-serif',
   width: '200px',
   height: '40px',
@@ -151,10 +163,10 @@ const religionDropdown = {
   fontSize: '14px',
   border: '1px solid #EDEDED',
   borderRadius: '4px',
+  background: 'transparent',
 };
 
 const languageDropdown = {
-  // marginLeft: '10px',
   fontFamily: 'Roboto, sans-serif',
   width: '230px',
   height: '40px',
@@ -163,11 +175,11 @@ const languageDropdown = {
   fontSize: '14px',
   border: '1px solid #EDEDED',
   borderRadius: '4px',
+  background: 'none',
+  padding: '0 0px 0 0',
 };
 
 const selectStyle = {
-  marginRight: '5px',
-  marginLeft: '5px',
   fontFamily: 'Roboto, sans-serif',
   color: '#23273A',
   fontWeight: '300',
@@ -176,16 +188,32 @@ const selectStyle = {
   alignContent: 'center',
 };
 
+const brideStyle = {
+  fontFamily: 'Roboto, sans-serif',
+  color: '#23273A',
+  fontWeight: '300',
+  fontSize: '14px',
+  display: 'inline',
+  padding: '0 10px 0 10px'
+};
+
+const groomStyle = {
+  fontFamily: 'Roboto, sans-serif',
+  color: '#23273A',
+  fontWeight: '300',
+  fontSize: '14px',
+  display: 'inline',
+};
 
 const radioStyle = {
-  marginRight: '5px',
   display: 'inline-block',
   border: '10px solid #FFFFFF',
-  // background: 'transparent',
   borderColor: 'blue',
   accentColor: '#EB5757',
   color: 'blue',
   alignContent: 'center',
+  marginTop: '10px',
+  marginRight: '10px',
 };
 
 const buttonStyle = {

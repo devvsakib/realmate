@@ -16,7 +16,7 @@
     "eslint-config-next": "13.3.1",
     "firebase": "^9.23.0",
     "framer-motion": "^10.12.17",
-    "next": "13.3.1",
+    "next": "^13.5.4",
     "postcss": "8.4.23",
     "pretty-checkbox-react": "^3.2.0",
     "prop-types": "15.7.2",
