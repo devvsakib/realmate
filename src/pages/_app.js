@@ -1,3 +1,4 @@
+import FeaturedProfile from '@/components/Featured-Profiles/FeaturedProfiles'
 import Footer from '@/components/Footer/Footer'
 import MainHeader from '@/components/Headers/MainHeader'
 import '@/styles/globals.css'
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
         <main className='flex flex-col justify-between min-h-screen'>
             <MainHeader />
             <Component {...pageProps} />
+            <FeaturedProfile />
             <Footer />
         </main>
     </>
