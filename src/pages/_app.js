@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer/Footer'
 import MainHeader from '@/components/Headers/MainHeader'
+import Testimonial from '@/components/Testimonial/Testimonial'
 import MobileMainHeader from '@/components/Headers/MobileMainHeader'
 import '@/styles/globals.css'
 import '@/styles/tailwind.common.css'
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
                 <MainHeader />
             </div>
             <Component {...pageProps} />
+            <Testimonial />
             <Footer />
         </main>
     </>
