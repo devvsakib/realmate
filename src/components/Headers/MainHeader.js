@@ -29,7 +29,7 @@ const MainHeader = () => {
                     <div>
                         <div className="flex items-center gap-2">
                             <div>
-                                <Link href={"singin"}>
+                                <Link href={"signin"}>
                                     <span className="">Sign in</span>
                                 </Link>
                             </div>
